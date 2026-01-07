@@ -8,7 +8,10 @@ export const Person = ({ person }) => {
   if (!isMarried) {
     partnerText = 'I am not married';
   } else {
-    const partnerWord = sex === 'm' ? 'wife' : 'husband';
+    // prettier-ignore
+    const partnerWord = sex === 'm'
+      ? 'wife'
+      : 'husband';
 
     partnerText = `${partnerName} is my ${partnerWord}`;
   }
